@@ -6,4 +6,10 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Mi primera pagina con express y Pug
     body
-        h1!= hola
+        //- Esto no se ejecuta en el navegador se ejecuta en el servidor
+        - var arreglo = [1, 2, 3, 4, 5];
+        - for (var item in arreglo)
+            p Numero #{arreglo[item]}
+        
+        if true
+            p La wea es esta cuestion
